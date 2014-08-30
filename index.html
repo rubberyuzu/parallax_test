@@ -8,18 +8,54 @@
 	<title>test_para</title>
 	<style>
 		.box{
-			width: 400px;
-			height: 200px;
 			position: fixed;
-			left: 0;
+			z-index: 0;
+		}
+		.roofship{
+			height: 100px;
+			width: 200px;
 			top: 0;
-			background-color: tomato;
+			left: 200px;
+			background-color: blue;
+		}
+		.bottomship{
+			height: 100px;
+			width: 400px;
+			top: 100px;
+			left: 0;
+			background-color: black;
+			border-bottom-right-radius: 50px;
+			border-bottom-left-radius: 50px;
+		}
+
+		.color_trans{
+			width: 100%;
+			height: 1000px;
+			position: absolute;
+			left: 0;
+			top: 500px;
+			z-index: -10;
+		}
+		.barrel{
+			width: 100%;
+			height: 3000px;
+			position: absolute;
+			left: 0;
+			top: 1000px;
+			font-size: 300px;
+			text-align: center;
+			padding-top: 350px;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="box" data-0="left: 0%;" data-500="left: 100%;" style="left: 0%;"> test</div>
+	<div class="box roofship" data-0="left: 0%;" data-500="left: 100%;"></div>
+	<div class="box bottomship" data-0="left: 0%;" data-500="left: 100%;"> ふね。</div>
+	
+	<div class="color_trans" data-500="background-color:rgb(0,0,255);" data-1000="background-color:rgb(150,0,105);">うみ。</div>
+	
+	<div class="barrel" data-1000="background-color:rgb(255,0,0);transform:rotate(0deg);" data-1500="background-color:rgb(0,0,255);transform:rotate(360deg);">回<br><br><br><br>沈</div>
 
   <script src="src/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="src/skrollr.js"></script>
