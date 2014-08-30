@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>test_para</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 200px;
+			position: fixed;
+			left: 0;
+			top: 0;
+			background-color: tomato;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" data-0="left: 0%;" data-500="left: 100%;" style="left: 0%;"> test</div>
+
+  <script src="src/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="src/skrollr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		var s = skrollr.init();
+	</script>
+</body>
+
+</html>
