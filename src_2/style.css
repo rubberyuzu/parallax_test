@@ -1,0 +1,13 @@
+.back{
+	width: 100%;
+	height: 10000px;
+}
+.mona{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 2000px;
+}
+.trans{
+	z-index: 10;
+}
